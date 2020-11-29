@@ -1,11 +1,14 @@
-// import React from 'react'
+import React from 'react'
+import Head from './Head'
+import MainMenu from './MainMenu'
 
-// function index() {
-//     return (
-//         <div>
-//             
-//         </div>
-//     )
-// }
+function Home() {
+    return (
+        <div>
+            <Head />
+            <MainMenu />
+        </div>
+    )
+}
 
-// export default index
+export default Home

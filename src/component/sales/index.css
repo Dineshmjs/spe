@@ -1,0 +1,31 @@
+.smenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.smenu-card:hover{
+    background-color: rgb(32, 32, 32);    
+}
+.smenu-card p:hover{
+    color: white;        
+}
+.smenu-card  p{
+    font-weight: 600;
+}
+
+.pefield{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.saform{
+    display: flex;    
+}
+
+.sabilling{
+    flex: 0.5;
+}
+
+.sashipping{
+    flex: 0.5;
+}
