@@ -8,11 +8,11 @@ function ChoosePayment() {
             <form className="m-3">
                 <select className="form-control w3-light-gray">
                     <option>Select Payment</option>
-                    <option>Cash</option>
-                    <option>Credit</option>
-                    <option>PhonePay</option>
-                    <option>GooglePay</option>
-                    <option>BHIM</option>
+                    <option value="CASH">Cash</option>
+                    <option value="CREDIT">Credit</option>
+                    <option value="PHONE PAy">PhonePay</option>
+                    <option value="GOOGLE PAY">GooglePay</option>
+                    <option value="BHIM">BHIM</option>
                 </select>
             </form>
             

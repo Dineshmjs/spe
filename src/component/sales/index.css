@@ -15,7 +15,7 @@
 
 .pefield{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
 }
 .saform{
@@ -29,3 +29,28 @@
 .sashipping{
     flex: 0.5;
 }
+
+.cpdiv{
+    display: flex;
+    flex-direction: row;        
+    justify-content: space-around;
+    
+}
+.cpselect{
+    flex: 0.5;   
+}
+
+.cpdata{
+    flex: 0.5;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cpdata > label{
+    width: 24%;
+}
+
+
+/* .cpinput{
+    flex: 0.4;
+} */

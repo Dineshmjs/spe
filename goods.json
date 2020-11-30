@@ -1,0 +1,410 @@
+[{
+  "_id": {
+    "$oid": "5f1fc107cc10fe0a12684c41"
+  },
+  "tournamentId": "5f1fb966cc10fe0a12684c35",
+  "matchId": "5f1fbd1fcc10fe0a12684c38",
+  "match": "Qualify",
+  "team": "Maratha Arabians ",
+  "overs": [
+    {
+      "balls": [
+        "C",
+        0,
+        0,
+        4,
+        1,
+        4
+      ],
+      "_id": {
+        "$oid": "5f1fc107cc10fe0a12684c42"
+      },
+      "over": 1,
+      "bowler": "Chrish Wood",
+      "runs": 9,
+      "ballCount": 6,
+      "wicket": 1
+    },
+    {
+      "balls": [
+        0,
+        4,
+        4,
+        4,
+        0,
+        1
+      ],
+      "_id": {
+        "$oid": "5f1fc14dcc10fe0a12684c4c"
+      },
+      "over": 2,
+      "bowler": "Chris Green",
+      "runs": 13,
+      "ballCount": 6,
+      "wicket": 0
+    },
+    {
+      "balls": [
+        0,
+        1,
+        "C",
+        0,
+        1,
+        4
+      ],
+      "_id": {
+        "$oid": "5f1fc185cc10fe0a12684c52"
+      },
+      "over": 3,
+      "bowler": "Andre Russel",
+      "runs": 6,
+      "ballCount": 6,
+      "wicket": 1
+    },
+    {
+      "balls": [
+        0,
+        4,
+        "C",
+        0,
+        2,
+        1
+      ],
+      "_id": {
+        "$oid": "5f1fc1e0cc10fe0a12684c5f"
+      },
+      "over": 4,
+      "bowler": "Nuwan Pradeep",
+      "runs": 7,
+      "ballCount": 6,
+      "wicket": 1
+    },
+    {
+      "balls": [
+        0,
+        "C",
+        0,
+        0,
+        1,
+        4
+      ],
+      "_id": {
+        "$oid": "5f1fc256cc10fe0a12684c69"
+      },
+      "over": 5,
+      "bowler": "Rayad Emrit",
+      "runs": 5,
+      "ballCount": 6,
+      "wicket": 1
+    },
+    {
+      "balls": [
+        1,
+        "WD0",
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "_id": {
+        "$oid": "5f1fc2b3cc10fe0a12684c82"
+      },
+      "over": 6,
+      "bowler": "Chris Green",
+      "runs": 6,
+      "ballCount": 6,
+      "wicket": 0
+    },
+    {
+      "balls": [
+        4,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "_id": {
+        "$oid": "5f1fc321cc10fe0a12684c89"
+      },
+      "over": 7,
+      "bowler": "Rayad Emrit",
+      "runs": 10,
+      "ballCount": 6,
+      "wicket": 0
+    },
+    {
+      "balls": [
+        4,
+        0,
+        1,
+        1,
+        "B",
+        0
+      ],
+      "_id": {
+        "$oid": "5f1fc345cc10fe0a12684c91"
+      },
+      "over": 8,
+      "bowler": "Andre Russel",
+      "runs": 6,
+      "ballCount": 6,
+      "wicket": 1
+    },
+    {
+      "balls": [
+        2,
+        6,
+        0,
+        1,
+        0,
+        "C"
+      ],
+      "_id": {
+        "$oid": "5f1fc38dcc10fe0a12684c9a"
+      },
+      "over": 9,
+      "bowler": "Chrish Wood",
+      "runs": 9,
+      "ballCount": 6,
+      "wicket": 1
+    },
+    {
+      "balls": [
+        1,
+        6,
+        3,
+        1,
+        4,
+        2
+      ],
+      "_id": {
+        "$oid": "5f1fc3c0cc10fe0a12684cac"
+      },
+      "over": 10,
+      "bowler": "Nuwan Pradeep",
+      "runs": 17,
+      "ballCount": 6,
+      "wicket": 0
+    }
+  ],
+  "players": [
+    {
+      "balls": [
+        "C"
+      ],
+      "_id": {
+        "$oid": "5f1fc107cc10fe0a12684c43"
+      },
+      "name": "Adam Lyth",
+      "runs": 0,
+      "outBy": "Chrish Wood",
+      "six": 0,
+      "four": 0,
+      "facedBall": 1
+    },
+    {
+      "balls": [
+        0,
+        0,
+        4,
+        4,
+        0,
+        4,
+        4,
+        4,
+        0,
+        1,
+        0,
+        0,
+        4,
+        0,
+        4,
+        "C"
+      ],
+      "_id": {
+        "$oid": "5f1fc111cc10fe0a12684c45"
+      },
+      "name": "Chanwick Walton",
+      "runs": 29,
+      "outBy": "Nuwan Pradeep",
+      "six": 0,
+      "four": 7,
+      "facedBall": 16
+    },
+    {
+      "balls": [
+        1,
+        1,
+        "C"
+      ],
+      "_id": {
+        "$oid": "5f1fc129cc10fe0a12684c48"
+      },
+      "name": "Chris Lynn",
+      "runs": 2,
+      "outBy": "Andre Russel",
+      "six": 0,
+      "four": 0,
+      "facedBall": 3
+    },
+    {
+      "balls": [
+        1,
+        0,
+        2,
+        1,
+        0,
+        "C"
+      ],
+      "_id": {
+        "$oid": "5f1fc1c6cc10fe0a12684c5a"
+      },
+      "name": "Yuvaraj Singh",
+      "runs": 4,
+      "outBy": "Rayad Emrit",
+      "six": 0,
+      "four": 0,
+      "facedBall": 6
+    },
+    {
+      "balls": [
+        0,
+        0,
+        4,
+        1,
+        1,
+        1,
+        4,
+        2,
+        1,
+        1,
+        0,
+        2,
+        6,
+        0,
+        1,
+        6,
+        1,
+        4
+      ],
+      "_id": {
+        "$oid": "5f1fc288cc10fe0a12684c75"
+      },
+      "name": "Dasun Shanaka",
+      "runs": 35,
+      "outBy": "",
+      "six": 2,
+      "four": 3,
+      "facedBall": 18
+    },
+    {
+      "balls": [
+        1,
+        1,
+        "WD0",
+        0,
+        1,
+        1,
+        1,
+        1,
+        4,
+        0,
+        1,
+        "B"
+      ],
+      "_id": {
+        "$oid": "5f1fc294cc10fe0a12684c7b"
+      },
+      "name": "James Fuller",
+      "runs": 11,
+      "outBy": "Andre Russel",
+      "six": 0,
+      "four": 1,
+      "facedBall": 11
+    },
+    {
+      "balls": [
+        1,
+        0,
+        "C"
+      ],
+      "_id": {
+        "$oid": "5f1fc39fcc10fe0a12684ca4"
+      },
+      "name": "Wanindu Hasaranga",
+      "runs": 1,
+      "outBy": "Chrish Wood",
+      "six": 0,
+      "four": 0,
+      "facedBall": 3
+    },
+    {
+      "balls": [
+        3,
+        2
+      ],
+      "_id": {
+        "$oid": "5f1fc3cdcc10fe0a12684cb7"
+      },
+      "name": "Dwayne Bravo",
+      "runs": 5,
+      "outBy": "",
+      "six": 0,
+      "four": 0,
+      "facedBall": 2
+    }
+  ],
+  "bowler": [
+    {
+      "_id": {
+        "$oid": "5f1fc107cc10fe0a12684c44"
+      },
+      "name": "Chrish Wood",
+      "runs": 18,
+      "ballCount": 12,
+      "wickets": 2
+    },
+    {
+      "_id": {
+        "$oid": "5f1fc14dcc10fe0a12684c4f"
+      },
+      "name": "Chris Green",
+      "runs": 19,
+      "ballCount": 12,
+      "wickets": 0
+    },
+    {
+      "_id": {
+        "$oid": "5f1fc185cc10fe0a12684c56"
+      },
+      "name": "Andre Russel",
+      "runs": 12,
+      "ballCount": 12,
+      "wickets": 2
+    },
+    {
+      "_id": {
+        "$oid": "5f1fc1e0cc10fe0a12684c64"
+      },
+      "name": "Nuwan Pradeep",
+      "runs": 24,
+      "ballCount": 12,
+      "wickets": 1
+    },
+    {
+      "_id": {
+        "$oid": "5f1fc256cc10fe0a12684c6f"
+      },
+      "name": "Rayad Emrit",
+      "runs": 15,
+      "ballCount": 12,
+      "wickets": 1
+    }
+  ],
+  "runs": 88,
+  "ballCount": 60,
+  "wicket": 1,
+  "__v": 0
+}]
