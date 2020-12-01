@@ -10,13 +10,12 @@ function ChooseProduct({Item,reload}) {
     useEffect(() => {
         http.get("goods")
             .then(res => {
-                setProducts(res.data)
-                console.log("goods", res.data)
+                setProducts(res.data)                
             })
             .catch(err => {
                 console.log("Error", err)
             })
-    }, [])
+    }, [reload])
 
     const SelectProduct = (index)=>{
         const product = Products[index]

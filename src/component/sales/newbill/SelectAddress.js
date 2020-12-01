@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import {http} from '../../../axios'
 
-function SelectAddress() {
+function SelectAddress({BillingAddress,ShippingAddress,reset}) {
 
     const [address,setAddress] = useState([])
     const [billing,setBilling] = useState({})
@@ -17,14 +17,23 @@ function SelectAddress() {
        })
     }, [])
 
+    useEffect(() => {
+        document.getElementById("billingform").reset()
+        document.getElementById("shippingform").reset()
+        setBilling({})
+        setShipping({})
+    }, [reset])
+
     const SelectBilling =(index)=>{
-        setBilling(address[index])
-        console.log("billing",billing,shipping)
+        let add = address[index]
+        setBilling(add)
+        BillingAddress(add)        
     }
 
     const SelectShipping =(index)=>{
-        setShipping(address[index])
-        console.log("shipping",shipping,billing)
+        let add = address[index]
+        setShipping(add)
+        ShippingAddress(add)        
     }
 
     
@@ -37,8 +46,8 @@ function SelectAddress() {
             <h5 className='w3-center w3-text-blue p-3'>Sales Address</h5> <br />
 
             <div className="saform">
-                <div className="sabilling">
-                    <form className="m-3">
+                <div className="sabilling"> 
+                    <form className="m-3" id="billingform">
                         <select className="form-control w3-light-gray" onChange={(e)=>SelectBilling(e.target.value)}>
                             <option>Select Billing Address</option>
                             {
@@ -76,7 +85,7 @@ function SelectAddress() {
                 </div>
 
                 <div className="sashipping">
-                    <form className="m-3">
+                    <form className="m-3" id="shippingform">
                         <select className="form-control w3-light-gray" onChange={(e)=>SelectShipping(e.target.value)}>
                             <option>Select Shipping Address</option>
                             {
