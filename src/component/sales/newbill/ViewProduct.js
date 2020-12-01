@@ -6,7 +6,7 @@ function ViewProduct({ reload, Reload }) {
     useEffect(() => {
         http.get("sales/tempitem")
             .then(res => {
-                setItems(res.data)
+                setItems(res.data)               
             })
             .catch(err => {
                 console.log("Error", err)
