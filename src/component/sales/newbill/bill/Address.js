@@ -1,54 +1,66 @@
 import React from 'react'
 
-function Address() {
+function Address({ address }) {
+    const { bill, ship, invoicedate, invoicenumber, payment } = address
     return (
         <div className="faddress">
             <div className="fbilling">
                 <h6 className="w3-center">Billing Address</h6>
-                <table className="w3-table">
-                    <tbody>
-                        <tr>
-                            <td>Name</td>
-                            <td>PUBLIC HEALTH CENTRE</td>
-                        </tr>
-                        <tr>
-                            <td>Address</td>
-                            <td>NO: 174, LAKE VIEW ROAD, WEST MAMBALAM, CHENNAI 33</td>
-                        </tr>
-                        <tr>
-                            <td>GSTIN</td>
-                            <td>33AAATT0857CIZU</td>
-                        </tr>
-                        <tr>
-                            <td>DLNO</td>
-                            <td>1000/M111/20 , 1004/M111/21</td>
-                        </tr>
-                    </tbody>
-                </table>
+
+                {
+                    bill && (
+                        <table className="w3-table">
+                            <tbody>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>{bill.name}</td>
+                                </tr>
+                                <tr>
+                                    <td>Address</td>
+                                    <td>{bill.address}</td>
+                                </tr>
+                                <tr>
+                                    <td>GSTIN</td>
+                                    <td>{bill.gstin}</td>
+                                </tr>
+                                <tr>
+                                    <td>DLNO</td>
+                                    <td>{bill.dlno}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    )
+                }
+
             </div>
             <div className="fshipping">
 
                 <h6 className="w3-center">Shipping Address</h6>
-                <table className="w3-table">
-                    <tbody>
-                        <tr>
-                            <td>Name</td>
-                            <td>PUBLIC HEALTH CENTRE</td>
-                        </tr>
-                        <tr>
-                            <td>Address</td>
-                            <td>NO: 174, LAKE VIEW ROAD, WEST MAMBALAM, CHENNAI 33</td>
-                        </tr>
-                        <tr>
-                            <td>GSTIN</td>
-                            <td>33AAATT0857CIZU</td>
-                        </tr>
-                        <tr>
-                            <td>DLNO</td>
-                            <td>1000/M111/20 , 1004/M111/21</td>
-                        </tr>
-                    </tbody>
-                </table>
+                {
+                    ship && (
+                        <table className="w3-table">
+                            <tbody>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>{ship.name}</td>
+                                </tr>
+                                <tr>
+                                    <td>Address</td>
+                                    <td>{ship.address}</td>
+                                </tr>
+                                <tr>
+                                    <td>GSTIN</td>
+                                    <td>{ship.gstin}</td>
+                                </tr>
+                                <tr>
+                                    <td>DLNO</td>
+                                    <td>{ship.dlno}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    )
+                }
+
             </div>
 
 
@@ -58,15 +70,15 @@ function Address() {
                     <tbody>
                         <tr>
                             <td>Invoce No</td>
-                            <td>SPE/2020-2021/0024</td>
+                            <td>{invoicenumber}</td>
                         </tr>
                         <tr>
                             <td>Invoice Date</td>
-                            <td>10-11-2020</td>
+                            <td>{invoicedate}</td>
                         </tr>
                         <tr>
                             <td>Payment</td>
-                            <td>CREDIT</td>
+                            <td>{payment}</td>
                         </tr>
                     </tbody>
                 </table>

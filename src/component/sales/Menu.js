@@ -1,17 +1,19 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Menu() {
     return (
         <div className="smenu">
             <div className="w3-card smenu-card mt-2">
-                <p className="p-2 mb-0">New Bill</p>
+                <Link to="/sales">
+                    <p className="p-2 mb-0">New Bill</p>
+                </Link>                
             </div>
             <div className="w3-card smenu-card mt-2">
-                <p className="p-2 mb-0">Return Bill</p>
-            </div>
-            <div className="w3-card smenu-card mt-2">
-                <p className="p-2 mb-0">New Bill</p>
-            </div>
+                <Link to="/sales/invoice">
+                    <p className="p-2 mb-0">Invoice</p>    
+                </Link>                
+            </div>            
         </div>
     )
 }

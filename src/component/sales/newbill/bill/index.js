@@ -7,24 +7,24 @@ import Sign from './Sign'
 import AmountWord from './AmountWord'
 import Products from './Products'
 
-function SalesBill() {  
-    // const {items,total,...address}  = salesBill
+function SalesBill({SalesData}) {  
+    const {items,total,...address}  = SalesData
     
     return (
         <div className="mt-3 w3-container">           
-            {/* <Taxinvoice />
+            <Taxinvoice />
             <CompanyDetails />
             <Address address={address} />    
             <Products items={items} />
             <AmountWord total={total} />
-            <Sign />    */}
+            <Sign />   
 
-            <Taxinvoice />
+            {/* <Taxinvoice />
             <CompanyDetails />
             <Address />    
             <Products  />
             <AmountWord  />
-            <Sign />        
+            <Sign />         */}
         </div>
     )
 }

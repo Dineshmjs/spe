@@ -1,17 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { http } from '../../../axios'
 
-function ViewProduct({ reload, Reload }) {
-    const [items, setItems] = useState([])
-    useEffect(() => {
-        http.get("sales/tempitem")
-            .then(res => {
-                setItems(res.data)               
-            })
-            .catch(err => {
-                console.log("Error", err)
-            })
-    }, [reload])
+function ViewProduct({ reload, Reload,items }) {
+    // const [items, setItems] = useState([])
+    
 
     const DeleteItem = (id)=>{
         http.delete("sales/tempitem",{params:{id:id}})

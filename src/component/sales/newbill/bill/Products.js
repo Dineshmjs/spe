@@ -1,27 +1,7 @@
-import React,{ useState, useEffect }  from 'react'
-import { http } from '../../../../axios'
+import React from 'react'
 
-function Products({ reload, Reload }) {
-    const [items, setItems] = useState([])
-    useEffect(() => {
-        http.get("sales/tempitem")
-            .then(res => {
-                setItems(res.data)
-            })
-            .catch(err => {
-                console.log("Error", err)
-            })
-    }, [reload])
-
-    const DeleteItem = (id)=>{
-        http.delete("sales/tempitem",{params:{id:id}})
-        .then(res=>{
-            Reload(res.data)
-        })
-        .catch(err=>{
-            console.log("error",err)
-        })
-    }
+function Products({items}) { 
+   
 
     var total = 0, gst = 0, disc = 0, grandTotal = 0
     return (
@@ -70,8 +50,7 @@ function Products({ reload, Reload }) {
                                     <td>{data.gstAmount / 2}</td>
                                     <td>{data.withgst}</td>
                                     <td>{data.disc}%</td>
-                                    <td>{data.withdisc}</td>
-                                    <td><button className="w3-red w3-button" onClick={() => DeleteItem(data._id)}>Delete</button></td>
+                                    <td>{data.withdisc}</td>                                    
                                 </tr>
                             )
                         })
@@ -94,8 +73,7 @@ function Products({ reload, Reload }) {
                         <td></td>
                         <td></td>
                         <td>{disc}</td>
-                        <td>{grandTotal}</td>
-                        <td></td>
+                        <td>{grandTotal}</td>                        
                     </tr>
                 </tbody>
             </table>
