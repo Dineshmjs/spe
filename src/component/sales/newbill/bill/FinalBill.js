@@ -1,3 +1,34 @@
+import React,{useState,useEffect} from 'react'
+import SalesBill from './'
+import {http} from '../../../../axios'
+
+
+function FinalBill() {
+    const [SalesData,setSalesData] = useState()
+
+    useEffect(() => {
+       http.get("sales")
+       .then(res=>{
+           setSalesData(res.data[0])
+           console.log(res.data[0])
+       })
+       .catch(err=>{
+           console.log(err)
+       })
+    }, [])
+
+
+    return (
+        <div>
+            {
+                SalesData &&    <SalesBill SalesData={SalesData} />
+            }
+            
+        </div>
+    )
+}
+
+export default FinalBill
 
 
 // Billing Address

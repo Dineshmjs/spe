@@ -74,3 +74,13 @@
     text-align: center;
     margin: 0;
 }
+
+.tbl{   
+    border-bottom: 1px solid black;
+}
+.tbl > tbody > tr > th{
+    border-right: 1px solid black;
+}
+.tbl > thead > tr > td{
+    border-right: 1px solid black;
+}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect,useRef } from 'react'
 import ProductEntry from './ProductEntry'
 import ViewProduct from './ViewProduct'
 import SelectAddress from './SelectAddress'
@@ -6,6 +6,8 @@ import ChoosePayment from './ChoosePayment'
 import { http } from '../../../axios'
 import SalesBill from './bill'
 import Sales from '../../sales'
+import {useReactToPrint } from 'react-to-print'
+
 
 
 function NewBill() {
@@ -18,6 +20,8 @@ function NewBill() {
     const [bill, setBill] = useState("")
     const [items, setItems] = useState([])
 
+    const ComponentRef = useRef()
+    
     useEffect(() => {
         http.get("sales/tempitem")
             .then(res => {
@@ -67,7 +71,7 @@ function NewBill() {
                 .then(async (res) => {
                     Reload(res.data)
                     setReset(res.data)
-                    await setBill(res.data)
+                    await setBill(res.data)                    
                     ResetData()
 
                 })
@@ -82,9 +86,12 @@ function NewBill() {
         }
     }
 
-    const PrintBill = () => {
+    const PrintBill = useReactToPrint({
+        content:()=>ComponentRef.current,
+        documentTitle:bill.invoicenumber
+    })
 
-    }
+    
 
     const CancelBill = () => {
         console.log("cancelbill", bill._id)
@@ -98,6 +105,8 @@ function NewBill() {
             })
 
     }
+
+    
 
 
 
@@ -118,7 +127,7 @@ function NewBill() {
                 <div className="w3-center mb-3">
                     <button className="btn btn-primary mt-3" data-toggle="modal" data-target="#bill" onClick={SendData}>
                         Finish
-                </button>
+                     </button>                     
                     <br />
                 </div>
 
@@ -127,13 +136,13 @@ function NewBill() {
                         <div className="modal-content">
                             {/* <button data-dismiss="modal" className="w3-right btn ">* cose</button> */}
                             {
-                                bill && <SalesBill SalesData={bill} />
+                                bill && <SalesBill SalesData={bill} ref={ComponentRef} />
                             }
 
                             <br />
                             <div className="w3-center">
-                                <button data-dismiss="modal" className="w3-button w3-green m-3 " onClick={PrintBill}>PrintBill</button>
-                                <button data-dismiss="modal" className="w3-button w3-red m-3 " onClick={CancelBill}>CancelBill</button>
+                                <button  className="w3-button w3-green m-3 " onClick={PrintBill}>PrintBill</button>
+                                <button  className="w3-button w3-red m-3 " onClick={CancelBill}>CancelBill</button>
                             </div>
                         </div>
                     </div>

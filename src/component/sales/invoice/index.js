@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import Sales from '..'
 import { http } from '../../../axios'
-import SalesBill from '../newbill/bill'
+// import SalesBill from '../newbill/bill'
 import './index.css'
+import PrintButton from './PrintButton'
+
+
 
 function Invoice() {
     const [sales, setSales] = useState([])
     const [reload,setReload] = useState()
+
+    // const ComponentRef = useRef()
 
     useEffect(() => {
         http.get("sales")
@@ -39,6 +44,7 @@ function Invoice() {
             })
 
     }
+    
 
     return (
         <div>
@@ -129,8 +135,9 @@ function Invoice() {
                             <div className="modal" id={`id${data._id}`} >
                                 <div className="modal-dialog modal-xl">
                                     <div className="modal-content">
-                                        <SalesBill SalesData={data} />
-                                        <button data-dismiss="modal" className="close w3-button w3-center w3-red">close</button>
+                                        {/* <SalesBill SalesData={data} ref={ComponentRef} />
+                                        <br></br> */}
+                                        <PrintButton SalesData={data} />                                        
                                     </div>
                                 </div>
                             </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import {BrowserRouter,Route,Switch} from 'react-router-dom'
 import Main from '../component/'
 import  Purches from '../component/purches'
-import FinalBill from '../component/sales/newbill/bill'
+import FinalBill from '../component/sales/newbill/bill/FinalBill'
 import SalesInvoice from '../component/sales/invoice'
 import NewBill from '../component/sales/newbill'
 

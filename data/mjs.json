@@ -1,0 +1,50 @@
+[{
+  "_id": {
+    "$oid": "5fc87a462b8ad40b2d2db942"
+  },
+  "invoicedate": {
+    "$date": "2020-12-03T04:53:55.816Z"
+  },
+  "items": [
+    {
+      "_id": {
+        "$oid": "5fc87a3e2b8ad40b2d2db941"
+      },
+      "product": "PRE OPARATIVE KIT (WITH SLEAVE) ",
+      "hsnno": 62103090,
+      "expiry": "",
+      "mrp": 150,
+      "qt": 1,
+      "rate": 100,
+      "total": 100,
+      "gst": 5,
+      "gstAmount": 5,
+      "withgst": 105,
+      "disc": 5,
+      "discAmount": 5.25,
+      "withdisc": 99.75,
+      "__v": 0
+    }
+  ],
+  "bill": {
+    "_id": "5fc4c1651c0a4b11fe84571e",
+    "name": "PUBLIC HEALTH CENTRE",
+    "address": "NO: 174, LAKE VIEW ROAD, WEST MAMBALAM, CHENNAI 33.",
+    "gstin": "33AAATT0857CIZU",
+    "dlno": "1000/M111/20  , 1004/M111/21"
+  },
+  "ship": {
+    "_id": "5fc4c1651c0a4b11fe84571f",
+    "name": "VARADAN MEDICALS",
+    "address": "NO 59 , 11th AVENUE , ASHOK NAGAR CHENNAI 600 082.",
+    "gstin": "33AEJPA2521D1ZD",
+    "dlno": "2988/M111/20 ,    2992/M111/21."
+  },
+  "total": 99.75,
+  "gst": 5,
+  "invoicenumber": 2,
+  "payment": "CASH",
+  "numofproduct": 1,
+  "status": "Success",
+  "__v": 0
+}]

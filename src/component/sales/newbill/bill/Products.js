@@ -1,4 +1,5 @@
 import React from 'react'
+import './index.css'
 
 function Products({items}) { 
    
@@ -6,8 +7,8 @@ function Products({items}) {
     var total = 0, gst = 0, disc = 0, grandTotal = 0
     return (
         <div className="fproduct">
-            <table className="w3-table">
-                <thead>
+            <table className="w3-table tbl">
+                <thead className="">
                     <tr>
                         <th>S.No</th>
                         <th>Goods</th>
