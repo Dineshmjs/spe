@@ -1,8 +1,8 @@
 import React from 'react'
 import './index.css'
 
-function Products({items}) { 
-   
+function Products({ items }) {
+
 
     var total = 0, gst = 0, disc = 0, grandTotal = 0
     return (
@@ -45,22 +45,36 @@ function Products({items}) {
                                     <td>{data.mrp}</td>
                                     <td>{data.qt}</td>
                                     <td>{data.rate}</td>
-                                    <td>{data.total}</td>
+                                    <td>{data.total.toFixed(2)}</td>
                                     <td>{data.gst}%</td>
-                                    <td>{data.gstAmount / 2}</td>
-                                    <td>{data.gstAmount / 2}</td>
-                                    <td>{data.withgst}</td>
+                                    <td>{(data.gstAmount / 2).toFixed(2)}</td>
+                                    <td>{(data.gstAmount / 2).toFixed(2)}</td>
+                                    <td>{data.withgst.toFixed(2)}</td>
                                     <td>{data.disc}%</td>
-                                    <td>{data.withdisc}</td>                                    
+                                    <td>{data.withdisc.toFixed(2)}</td>
                                 </tr>
                             )
                         })
                     }
 
-                    <tr><td>.</td></tr>
-                    <tr><td>.</td></tr>
-                    <tr>
+                    <tr className="midrow">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
 
+                    <tr className="endrow">
                         <td></td>
                         <td></td>
                         <td></td>
@@ -68,13 +82,13 @@ function Products({items}) {
                         <td></td>
                         <td></td>
                         <td><b>Total</b></td>
-                        <td>{total}</td>
-                        <td>{gst}</td>
+                        <td>{total.toFixed(2)}</td>
+                        <td>{gst.toFixed(2)}</td>
                         <td></td>
                         <td></td>
-                        <td></td>
-                        <td>{disc}</td>
-                        <td>{grandTotal}</td>                        
+                        <td>{(total + gst).toFixed(2)}</td>
+                        <td>{disc.toFixed(2)}</td>
+                        <td>{grandTotal.toFixed(2)}</td>
                     </tr>
                 </tbody>
             </table>

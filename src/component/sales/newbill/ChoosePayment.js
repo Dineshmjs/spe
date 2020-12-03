@@ -13,7 +13,7 @@ function ChoosePayment({Payment,reset}) {
                     <option>Select Payment</option>
                     <option value="CASH">Cash</option>
                     <option value="CREDIT">Credit</option>
-                    <option value="PHONE PAy">PhonePay</option>
+                    <option value="PHONE PAY">PhonePay</option>
                     <option value="GOOGLE PAY">GooglePay</option>
                     <option value="BHIM">BHIM</option>
                 </select>

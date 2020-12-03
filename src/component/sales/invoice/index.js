@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import Sales from '..'
 import { http } from '../../../axios'
-// import SalesBill from '../newbill/bill'
+import { MyDate } from '../../../Custom/MyDate'
 import './index.css'
 import PrintButton from './PrintButton'
-
-
+import {SpeInvoiceNumber} from '../../../Custom/SpeInvoiceNumber'
 
 function Invoice() {
     const [sales, setSales] = useState([])
@@ -52,11 +51,11 @@ function Invoice() {
 
             <div className="w3-container istats mt-3">
                 <div className="w3-card w3-purple w3-center">
-                    <h3 className="p-3 w3-text-large">{total}</h3>
+                    <h3 className="p-3 w3-text-large">{total.toFixed(2)}</h3>
                     <p className="w3-left pl-3">Total Amount</p>
                 </div>
                 <div className="w3-card w3-blue w3-center">
-                    <h3 className="p-3">{gst}</h3>
+                    <h3 className="p-3">{gst.toFixed(2)}</h3>
                     <p className="w3-left pl-3">Total Gst Amount</p>
                 </div>
                 <div className="w3-card w3-indigo w3-center">
@@ -104,29 +103,24 @@ function Invoice() {
 
                                 <div className="scarddown">
                                     <div>
-                                        <p className="pl-2">No :{data.invoicenumber}</p>
+                                        <p className="pl-2">Invoice No : {SpeInvoiceNumber(data.invoicenumber)}</p>
                                     </div>
                                     <div>
-                                        <p>Date :{data.invoicedate}</p>
+                                        <p>Date : {MyDate(data.invoicedate)}</p>
                                     </div>
                                     <div>
-                                        <p>Payment :{data.payment}</p>
+                                        <p>Payment : {data.payment}</p>
                                     </div>
                                     <div>
-                                        <p>Gst :{data.gst}</p>
+                                        <p>Gst : {data.gst.toFixed(2)}</p>
                                     </div>
                                     <div>
-                                        <p>Total :{data.total}</p>
+                                        <p>Total : {data.total.toFixed(2)}</p>
                                     </div>
                                     <div>
-                                        <p className="pr-2">NOP :{data.numofproduct}</p>
+                                        <p className="pr-2">NOP : {data.numofproduct}</p>
                                     </div>
-
-
                                 </div>
-
-
-
                             </div>
 
 

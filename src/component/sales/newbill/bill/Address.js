@@ -1,4 +1,5 @@
 import React from 'react'
+import { MyDate } from '../../../../Custom/MyDate'
 
 function Address({ address }) {
     const { bill, ship, invoicedate, invoicenumber, payment } = address
@@ -69,16 +70,16 @@ function Address({ address }) {
                 <table className="w3-table">
                     <tbody>
                         <tr>
-                            <td>Invoce No</td>
-                            <td>{invoicenumber}</td>
+                            <td>Invoce No </td>
+                            <td>: {invoicenumber}</td>
                         </tr>
                         <tr>
-                            <td>Invoice Date</td>
-                            <td>{invoicedate}</td>
+                            <td>Invoice Date </td>
+                            <td>: {MyDate(invoicedate)}</td>
                         </tr>
                         <tr>
                             <td>Payment</td>
-                            <td>{payment}</td>
+                            <td>: {payment}</td>
                         </tr>
                     </tbody>
                 </table>

@@ -1,3 +1,6 @@
+.scard{
+    border: 1px solid lightgrey;
+}
 .scardtop{
     display: flex;
     flex-direction: row;   

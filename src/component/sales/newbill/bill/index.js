@@ -35,7 +35,8 @@ export default class SaesBill extends Component {
                 <Address address={this.state.address} />    
                 <Products items={this.state.items} />
                 <AmountWord total={this.state.total} />
-                <Sign />                   
+                <Sign />  
+                <br></br>                 
             </div>
         )
     }

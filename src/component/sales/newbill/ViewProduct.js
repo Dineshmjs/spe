@@ -57,13 +57,13 @@ function ViewProduct({ reload, Reload,items }) {
                                     <td>{data.mrp}</td>
                                     <td>{data.qt}</td>
                                     <td>{data.rate}</td>
-                                    <td>{data.total}</td>
+                                    <td>{data.total.toFixed(2)}</td>
                                     <td>{data.gst}%</td>
-                                    <td>{data.gstAmount / 2}</td>
-                                    <td>{data.gstAmount / 2}</td>
-                                    <td>{data.withgst}</td>
+                                    <td>{(data.gstAmount / 2).toFixed(2)}</td>
+                                    <td>{(data.gstAmount / 2).toFixed(2)}</td>
+                                    <td>{data.withgst.toFixed(2)}</td>
                                     <td>{data.disc}%</td>
-                                    <td>{data.withdisc}</td>
+                                    <td>{data.withdisc.toFixed(2)}</td>
                                     <td><button className="w3-red w3-button" onClick={()=>DeleteItem(data._id)}>Delete</button></td>
                                 </tr>
                             )
@@ -81,13 +81,13 @@ function ViewProduct({ reload, Reload,items }) {
                         <td></td>
                         <td></td>
                         <td><b>Total</b></td>
-                        <td>{total}</td>
-                        <td>{gst}</td>
+                        <td>{total.toFixed(2)}</td>
+                        <td>{gst.toFixed(2)}</td>
                         <td></td>
                         <td></td>
-                        <td></td>
-                        <td>{disc}</td>
-                        <td>{grandTotal}</td> 
+                        <td>{(total + gst).toFixed(2)}</td>
+                        <td>{disc.toFixed(2)}</td>
+                        <td>{grandTotal.toFixed(2)}</td> 
                         <td></td>                       
                     </tr>
                 </tbody>
