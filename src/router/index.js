@@ -13,8 +13,8 @@ function index() {
                 <Route exact path="/" component = {Main} />               
                 <Route exact path="/purches" component = {Purches} />
                 <Route exact path="/final" component={FinalBill} />
-                <Route exact path="/sales" component={NewBill} />
-                <Route exact path="/sales/invoice" component={SalesInvoice} />
+                <Route exact path="/sales/newbill" component={NewBill} />
+                <Route exact path="/sales" component={SalesInvoice} />
             </Switch>
         </BrowserRouter>
     )

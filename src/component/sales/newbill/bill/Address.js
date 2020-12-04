@@ -1,5 +1,6 @@
 import React from 'react'
 import { MyDate } from '../../../../Custom/MyDate'
+import {SpeInvoiceNumber} from '../../../../Custom/SpeInvoiceNumber'
 
 function Address({ address }) {
     const { bill, ship, invoicedate, invoicenumber, payment } = address
@@ -71,7 +72,7 @@ function Address({ address }) {
                     <tbody>
                         <tr>
                             <td>Invoce No </td>
-                            <td>: {invoicenumber}</td>
+                            <td>: {SpeInvoiceNumber(invoicenumber)}</td>
                         </tr>
                         <tr>
                             <td>Invoice Date </td>

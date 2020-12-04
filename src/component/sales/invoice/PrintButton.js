@@ -4,7 +4,8 @@ import SalesBill from '../newbill/bill'
 
 function PrintButton({SalesData}) {
 
-    console.log(SalesData)
+    
+    console.log("printbutton",SalesData)
     const ComponentRef = useRef()
 
     const PrintBill = useReactToPrint({

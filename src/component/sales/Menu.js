@@ -5,12 +5,12 @@ function Menu() {
     return (
         <div className="smenu">
             <div className="w3-card smenu-card mt-2">
-                <Link to="/sales">
+                <Link to="/sales/newbill">
                     <p className="p-2 mb-0">New Bill</p>
                 </Link>                
             </div>
             <div className="w3-card smenu-card mt-2">
-                <Link to="/sales/invoice">
+                <Link to="/sales">
                     <p className="p-2 mb-0">Invoice</p>    
                 </Link>                
             </div>            
