@@ -5,6 +5,7 @@ import  Purches from '../component/purches'
 import FinalBill from '../component/sales/newbill/bill/FinalBill'
 import SalesInvoice from '../component/sales/invoice'
 import NewBill from '../component/sales/newbill'
+import Buyers from '../component/sales/buyers'
 
 function index() {
     return (
@@ -15,6 +16,7 @@ function index() {
                 <Route exact path="/final" component={FinalBill} />
                 <Route exact path="/sales/newbill" component={NewBill} />
                 <Route exact path="/sales" component={SalesInvoice} />
+                <Route exact path="/sales/buyers" component={Buyers} />
             </Switch>
         </BrowserRouter>
     )

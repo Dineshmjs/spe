@@ -13,6 +13,11 @@ function Menu() {
                 <Link to="/sales">
                     <p className="p-2 mb-0">Invoice</p>    
                 </Link>                
+            </div>   
+            <div className="w3-card smenu-card mt-2">
+                <Link to="/sales/buyers">
+                    <p className="p-2 mb-0">Buyers Details</p>    
+                </Link>                
             </div>            
         </div>
     )
