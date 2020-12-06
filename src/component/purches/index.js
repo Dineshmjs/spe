@@ -1,9 +1,13 @@
 import React from 'react'
+import Head from '../Head'
+import Menu from './Menu'
+import './index.css'
 
 function Purches() {
     return (
         <div>
-            purches
+            <Head />
+            <Menu />            
         </div>
     )
 }
