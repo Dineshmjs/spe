@@ -1,0 +1,43 @@
+
+.pefield{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.cpdiv{
+    display: flex;
+    flex-direction: row;        
+    justify-content: space-around;
+    
+}
+.cpselect{
+    flex: 0.5;   
+}
+
+.cpdata{
+    flex: 0.5;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cpdata > label{
+    width: 24%;
+}
+
+
+/* .cpinput{
+    flex: 0.4;
+} */
+
+.pinvoice{
+    display: flex;
+    flex-direction: row;
+}
+.selectaddress{
+    flex: 0.5;
+}
+.invoiceentry{
+    flex: 0.5;
+}
+
