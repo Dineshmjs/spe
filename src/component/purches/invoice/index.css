@@ -1,0 +1,56 @@
+.scard{
+    border: 1px solid lightgrey;
+}
+.scardtop{
+    display: flex;
+    flex-direction: row;   
+}
+
+.saddress{
+    flex: 0.8;
+}
+.billaction{
+    flex:0.2;
+}
+
+.saddress{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.scarddown{
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+.scarddown > div > p{
+    margin: 0px;
+    padding-top: 5px;
+}
+.sbuttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.istats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.istats > div{
+    width: 24%;
+}
+/* 
+
+
+
+
+
+
+
+*/
