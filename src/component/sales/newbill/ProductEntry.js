@@ -28,7 +28,7 @@ function ProductEntry({Reload,reload}) {
             custom:productInfo
         } 
 
-        http.post("sales/tempitem",postdata)
+        http.post("tempitem",postdata)
         .then(res=>{
             console.log(res.data)
             Reload(res.data)

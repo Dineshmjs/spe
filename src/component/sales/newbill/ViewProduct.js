@@ -6,7 +6,7 @@ function ViewProduct({ reload, Reload,items }) {
     
 
     const DeleteItem = (id)=>{
-        http.delete("sales/tempitem",{params:{id:id}})
+        http.delete("tempitem",{params:{id:id}})
         .then(res=>{
             Reload(res.data)
         })

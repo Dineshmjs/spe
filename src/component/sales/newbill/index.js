@@ -23,7 +23,7 @@ function NewBill() {
     const ComponentRef = useRef()
     
     useEffect(() => {
-        http.get("sales/tempitem")
+        http.get("tempitem")
             .then(res => {
                 setItems(res.data)
             })
